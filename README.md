@@ -1,2 +1,2 @@
-# Ecommerce-site-project
-This is an E-commerce site collaboration project built using html, css and javascript 
+# Interactive-comments-section
+This is an interactive comments secction CRUD app built with html, css,javascript and django 
