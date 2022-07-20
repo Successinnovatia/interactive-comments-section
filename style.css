@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color:  hsl(223, 19%, 93%);
+}
+
+main .container{
+width: 726px;
+/* width: 50%; */
+max-height: 173px;
+min-height: 165px;
+background-color: white;
+margin: 10em auto;
+text-align: center;
+padding: 22px;
+border-radius: 10px;
+display: flex;
+}
+@media screen and (max-width: 768px) {
+    .container{
+        width: 345px;
+        /* height: 256px;
+        flex-direction: column; */
+    }
+    }
+
+.container .count{
+    width: 40px;
+    height: 100px;
+    background-color: hsl(223, 19%, 93%);
+    border-radius: 10px;
+}
+
+.count .vote{
+    margin-top: 10px;
+    color: hsl(238, 40%, 52%);
+    font-weight: 500;
+}
+.add-vote, .remove-vote{
+    margin-top: 10px;
+    color: hsl(239, 57%, 85%);
+    font-weight: bold;
+}
+
+.content{
+    margin-left: 25px;
+    width: 100%;
+}
+
+
+#names{
+    list-style: none;
+    color: black;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.top-left{
+    display: flex;
+    align-items: center;
+}
+.top-left img{
+    height: 33px;
+    width: 33px;
+}
+.top-left .name{
+    font-weight: 500;
+    margin-left: 16px;
+}
+.top-left .date{
+    margin-left: 16px;
+    color: hsl(211, 10%, 45%);
+}
+.top-right{
+    display: flex;
+    align-items: center;
+   
+}
+.top-right img{
+height: 15px;
+width: 16px;
+
+}
+.top-right p{
+    margin-left: 8px;
+    color:  hsl(238, 40%, 52%);
+    font-weight: 500;
+}
+
+.text{
+    width: 578px;
+    text-align: left;
+    overflow: scroll;
+    height: 100px;
+}
+.text p{
+    font: 400;
+    line-height: 1.5;
+    margin-top: 10px;
+    color: hsl(211, 10%, 45%);
+}
+
+
+
