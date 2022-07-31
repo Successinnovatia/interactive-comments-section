@@ -7,15 +7,15 @@
 
 body{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     background-color:  hsl(223, 19%, 93%);
 }
 
 main .container{
-width: 726px;
-/* width: 50%; */
-max-height: 173px;
-min-height: 165px;
+/* width: 726px; */
+width: 50%;
+/* max-height: 173px;
+min-height: 165px; */
 background-color: white;
 margin: 10em auto;
 text-align: center;
@@ -23,16 +23,11 @@ padding: 22px;
 border-radius: 10px;
 display: flex;
 }
-@media screen and (max-width: 768px) {
-    .container{
-        width: 345px;
-        /* height: 256px;
-        flex-direction: column; */
-    }
-    }
+
 
 .container .count{
-    width: 40px;
+    /* width: 40px; */
+    width: 10%;
     height: 100px;
     background-color: hsl(223, 19%, 93%);
     border-radius: 10px;
@@ -51,7 +46,7 @@ display: flex;
 
 .content{
     margin-left: 25px;
-    width: 100%;
+    width: 95%;
 }
 
 
@@ -98,10 +93,11 @@ width: 16px;
 }
 
 .text{
-    width: 578px;
+    /* width: 578px; */
+    width: 100%;
     text-align: left;
     overflow: scroll;
-    height: 100px;
+    /* height: 100px; */
 }
 .text p{
     font: 400;
@@ -110,5 +106,37 @@ width: 16px;
     color: hsl(211, 10%, 45%);
 }
 
-
-
+@media only screen and (max-width: 768px) {
+    
+    main .container{
+        /* width: 345px; */
+        width: 90%;
+        /* height: 256px; */
+        flex-direction: column-reverse;
+        justify-content:  space-between;
+        text-align: end;
+        
+     
+    }
+    .container .count{
+        width: 100px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .count .vote{
+        margin: 5px;
+    }
+    .add-vote, .remove-vote{
+        margin: auto;
+    }
+    .content{
+        margin-left: 0;
+    }
+    /* .top-right{
+        position: fixed;
+        top: 320px;
+        right: 80px;
+    } */
+}
